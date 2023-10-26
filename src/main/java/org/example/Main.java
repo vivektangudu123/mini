@@ -16,7 +16,7 @@ public class Main {
 
         do{
             System.out.println("Operation:\n");
-            System.out.println("1. Square root");
+            System.out.println("1. Square rot");
             System.out.println("2. Factorial");
             System.out.println("3. Naural Log");
             System.out.println("4. Power");
