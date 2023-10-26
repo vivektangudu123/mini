@@ -4,13 +4,11 @@
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
-    - name: Pull image
-      docker_image:
-        name: bean6792/calculator:latest
-        source: pull
     - name: Start docker service
       service:
         name: docker
         state: started
+    - name: pull docker image
+      shell: docker pull bean6792/calculator:latest
     - name: Running container
-      shell: docker run -it -d --name Calc bean6792/calculator:latest
+      shell: docker run -it -p 3000:3000 -d bean6792/calculator:latest
