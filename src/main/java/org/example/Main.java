@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
-        logger.info("The world's first unscientific calculator. Now with many many DevOp tools behind it");
+        logger.info("Start building Calculator:");
         //some changes
         Scanner reader = new Scanner(System.in);
         int op, flag=0;
@@ -15,9 +15,7 @@ public class Main {
         int numm;
 
         do{
-            System.out.println("------------Calculator--------------");
-            System.out.println("Choices of Operations:");
-            System.out.println("");
+            System.out.println("Operations:\n");
             System.out.println("1. Square root");
             System.out.println("2. Factorial");
             System.out.println("3. Natural Log");
