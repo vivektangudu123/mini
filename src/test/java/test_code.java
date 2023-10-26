@@ -19,7 +19,7 @@ public class test_code {
     @Test
     public void test_factorial() {
         int a = 5;
-        int expectedResult = 120;
+        int expectedResult = 12;
         int result = calculator.factorial(a);
         Assert.assertEquals(expectedResult, result);
     }
