@@ -17,7 +17,7 @@ public class Main {
         do{
             System.out.println("Operations:\n");
             System.out.println("1. Square root");
-            System.out.println("2. Factoial");
+            System.out.println("2. Factorial");
             System.out.println("3. Natural Log");
             System.out.println("4. Power");
             System.out.println("5. Exit");
