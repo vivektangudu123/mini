@@ -1,4 +1,4 @@
 FROM openjdk:11
-COPY ./target/calculator.jar ./
+COPY ./target/calulator-1.0-SNAPSHOT-jar-with-dependencies.jar ./
 WORKDIR ./
-CMD [“java”,”-cp”,” calculator.jar”,”org.example.Main”]
+CMD [“java”,”-cp”,”calulator-1.0-SNAPSHOT-jar-with-dependencies.jar”,”org.example.Main”]
