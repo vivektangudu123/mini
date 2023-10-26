@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
-        logger.info("Start building:");
+        logger.info("Start building Calculator:");
         //some changes
         Scanner reader = new Scanner(System.in);
         int op, flag=0;
