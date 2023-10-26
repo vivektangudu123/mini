@@ -15,7 +15,7 @@ public class Main {
         int numm;
 
         do{
-            System.out.println("Operations:\n");
+            System.out.println("Operation:\n");
             System.out.println("1. Square root");
             System.out.println("2. Factorial");
             System.out.println("3. Naural Log");
