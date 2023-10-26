@@ -7,6 +7,6 @@
     - name: Start docker service
       service:
         name: docker
-        state: started
+        state: present
     - name: pull docker image
       shell: docker pull bean6792/calculator:latest
