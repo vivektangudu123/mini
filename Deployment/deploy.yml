@@ -10,5 +10,3 @@
         state: started
     - name: pull docker image
       shell: docker pull bean6792/calculator:latest
-    - name: Running container
-      shell: docker run -it -p 3000:3000 -d bean6792/calculator:latest
