@@ -8,3 +8,4 @@
       service:
         name: docker
         state: started
+        when: ansible_facts['os_family'] == "Debian"
