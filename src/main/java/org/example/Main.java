@@ -7,19 +7,18 @@ import java.util.Scanner;
 public class Main {
     private static final Logger logger = LogManager.getLogger(Main.class);
     public static void main(String[] args) {
-        logger.info("Start building Calculatcor:");
+        logger.info("Calculator Begins!!");
         //some changes
         Scanner reader = new Scanner(System.in);
         int op, flag=0;
         double num, exp;
-        int numm;
 
         do{
             System.out.println("Operation:\n");
-            System.out.println("1. Square rot");
-            System.out.println("2. Factorial");
-            System.out.println("3. Natural Log");
-            System.out.println("4. Power");
+            System.out.println("1. Add");
+            System.out.println("2. Subtract");
+            System.out.println("3. Power");
+            System.out.println("4. Multiply");
             System.out.println("5. Exit\n");
             System.out.print("Enter your choice(number): \n");
             op = reader.nextInt();
@@ -27,36 +26,40 @@ public class Main {
             else{
                 switch(op){
 
-                    case 1:  // Square Root
-                        System.out.println("You choose Square Root!!\n");
-                        System.out.print("Enter number: ");
+                    case 1:  // addition
+                        System.out.println("Add two numbers!!\n");
+                        System.out.print("Enter number1: \n");
                         num = reader.nextDouble();
-                        squareRoot(num);
+                        System.out.print("Enter number2: \n");
+                        exp = reader.nextDouble();
+                        add(num,exp);
                         break;
 
-                    case 2: //Factorial
-                        System.out.println("You choose Factorial!!\n");
-                        System.out.print("Enter number: ");
-                        numm = reader.nextInt();
-                        factorial(numm);
+                    case 2: //Subtract
+                        System.out.println("Subtract two numbers!!\n");
+                        System.out.print("Enter number1: \n");
+                        num = reader.nextDouble();
+                        System.out.print("Enter number2: \n");
+                        exp = reader.nextDouble();
+                        subt(num,exp);
                         break;
 
-                    case 3: //Natural Log
-                        System.out.println("You choose Natural Log!!");
-                        System.out.println("");
-                        System.out.print("Enter number: ");
+                    case 3: //Power
+                        System.out.println("Power two numbers!!\n");
+                        System.out.print("Enter number1: \n");
                         num = reader.nextDouble();
-                        naturalLog(num);
+                        System.out.print("Enter number2: \n");
+                        exp = reader.nextDouble();
+                        power(num,exp);
                         break;
 
                     case 4: //Power
-                        System.out.println("You choose Power!!");
-                        System.out.println("");
-                        System.out.print("Enter number: ");
+                        System.out.println("Multiply two numbers!!\n");
+                        System.out.print("Enter number1: \n");
                         num = reader.nextDouble();
-                        System.out.print("exponent: ");
+                        System.out.print("Enter number2: \n");
                         exp = reader.nextDouble();
-                        power(num,exp);
+                        mul(num,exp);
                         break;
 
                     default:
@@ -67,38 +70,29 @@ public class Main {
         }while(flag == 0);
     }
 
-    public static double squareRoot(double num){
-        double c = Math.sqrt(num);
-        System.out.println("");
-        System.out.println("The Result is "+c);
-        System.out.println("");
-        logger.info("Executing squareRoot function!");
+    public static double add(double num,double exp){
+        double c=num+exp;
+        System.out.println("\nThe Result is "+c+"\n");
+        logger.info("Executing addition for"+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
 
-    public static int factorial(int num){
-        int c = num ;
-        for(int i=num-1; i>=1; i--) c = c*i;
-        System.out.println("");
-        System.out.println("The Result is "+c);
-        System.out.println("");
-        logger.info("Executing Factorial function!");
+    public static double subt(double num,double exp){
+        double c=num-exp;
+        System.out.println("\nThe Result is "+c+"\n");
+        logger.info("Executing subtraction for"+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
-    public static double naturalLog(double num){
-        double c = Math.log(num);
-        System.out.println("");
-        System.out.println("The Result is "+ c);
-        System.out.println("");
-        logger.info("Executing naturalLog function!");
+    public static double mul(double num,double exp){
+        double c = Math.pow(num,exp);
+        System.out.println("\nThe Result is "+c+"\n");
+        logger.info("Executing subtraction for"+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
     public static double power(double num, double exp){
         double c = Math.pow(num,exp);
-        System.out.println("");
-        System.out.println("The Result is "+ c);
-        System.out.println("");
-        logger.info("Executing Power function!");
+        System.out.println("\nThe Result is "+c+"\n");
+        logger.info("Executing subtraction for"+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
 }
