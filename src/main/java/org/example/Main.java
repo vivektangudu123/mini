@@ -35,8 +35,7 @@ public class Main {
                         break;
 
                     case 2: //Factorial
-                        System.out.println("You choose Factorial!!");
-                        System.out.println("");
+                        System.out.println("You choose Factorial!!\n");
                         System.out.print("Enter number: ");
                         numm = reader.nextInt();
                         factorial(numm);
