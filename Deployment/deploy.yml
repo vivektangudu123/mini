@@ -7,4 +7,4 @@
     - name: Start docker service
       service:
         name: docker
-        shell: docker images ls
+        state: enabled
