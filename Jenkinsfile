@@ -36,7 +36,7 @@ pipeline{
                 script{
                     sh 'docker container prune -f'
                     sh 'docker image prune -f'
-                    sh 'docker stop Unscientific'
+                    sh 'docker ps -a -q'
                     sh 'docker container prune -f'
                 }
             }
