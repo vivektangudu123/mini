@@ -43,7 +43,7 @@ pipeline{
             steps{
                     sh 'pip3 install docker'
                     sh 'docker pull bean6792/calculator:latest'
-                    sh 'echo '1383' |sudo systemctl start docker'
+                    sh 'echo 1383 |sudo systemctl start docker'
                     sh 'docker run -it -d --name Unsciific bean6792/calculator'
             }
         }
