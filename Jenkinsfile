@@ -41,7 +41,6 @@ pipeline{
         }
         stage('Step 6: Ansible Deployment'){
             steps{
-                script{
                     sh 'pip3 install docker'
                     sh 'docker pull bean6792/calculator:latest'
                     sh 'sudo systemctl start docker'
