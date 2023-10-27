@@ -4,10 +4,8 @@
   vars:
     ansible_python_interpreter: /usr/bin/python3
   tasks:
-    - name: install Docker python module
-      docker_image:
-        name: bean6792/calculator:latest
-        shell: docker pull bean6792/calculator:latest
+    - name: Pull image
+      shell: docker pull bean6792/calculator:latest
     - name: Start docker service
       service:
         name: docker
