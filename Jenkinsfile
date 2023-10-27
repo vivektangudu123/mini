@@ -41,11 +41,14 @@ pipeline{
         }
         stage('Step 6: Ansible Deployment'){
             steps{
-                    sh 'pip3 install docker'
-                    sh 'pass=$1383'
-                    sh 'docker pull bean6792/calculator:latest'
-                    sh 'echo $pass | sudo systemctl start docker'
-                    sh 'docker run -it -d --name Unsciific bean6792/calculator'
+                ansiblePlaybook becomeUser: null,
+                colorized: true,
+                credentialsId: 'localhost',
+                disableHostKeyChecking: true,
+                installation: 'Ansible',
+                inventory: 'Deployment/inventory',
+                playbook: 'Deployment/deploy.yml',
+                sudoUser: null
             }
         }
     }
