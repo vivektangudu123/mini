@@ -1,0 +1,64 @@
+2023-10-27 15:47:23.178 [main] INFO  org.example.Main - Executing subtraction for2.0 and 2.0. Result: 0.0
+
+2023-10-27 15:47:23.181 [main] INFO  org.example.Main - Executing subtraction for2.0 and 2.0. Result: 4.0
+
+2023-10-27 15:47:23.182 [main] INFO  org.example.Main - Executing addition for2.0 and 2.0. Result: 4.0
+
+2023-10-27 15:47:23.182 [main] INFO  org.example.Main - Executing subtraction for2.0 and 5.0. Result: 32.0
+
+2023-10-27 15:48:52.728 [main] INFO  org.example.Main - Executing subtraction for2.0 and 2.0. Result: 0.0
+
+2023-10-27 15:48:52.731 [main] INFO  org.example.Main - Executing addition for2.0 and 2.0. Result: 4.0
+
+2023-10-27 15:48:52.732 [main] INFO  org.example.Main - Executing subtraction for2.0 and 2.0. Result: 4.0
+
+2023-10-27 15:48:52.732 [main] INFO  org.example.Main - Executing subtraction for2.0 and 5.0. Result: 32.0
+
+2023-10-27 15:55:24.472 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 0
+
+2023-10-27 15:55:24.473 [main] INFO  org.example.Main - Executing addition for2 and 2. Result: 4
+
+2023-10-27 15:55:24.473 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 4.0
+
+2023-10-27 15:55:24.476 [main] INFO  org.example.Main - Executing subtraction for2 and 5. Result: 32.0
+
+2023-10-27 15:57:19.095 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 0
+
+2023-10-27 15:57:19.097 [main] INFO  org.example.Main - Executing addition for2 and 2. Result: 4
+
+2023-10-27 15:57:19.097 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 4.0
+
+2023-10-27 15:57:19.100 [main] INFO  org.example.Main - Executing subtraction for2 and 5. Result: 32.0
+
+2023-10-27 16:00:41.565 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 0
+
+2023-10-27 16:00:41.566 [main] INFO  org.example.Main - Executing addition for2 and 2. Result: 4
+
+2023-10-27 16:00:41.566 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 4
+
+2023-10-27 16:00:41.569 [main] INFO  org.example.Main - Executing subtraction for2 and 5. Result: 32.0
+
+2023-10-27 16:02:45.016 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 0
+
+2023-10-27 16:02:45.017 [main] INFO  org.example.Main - Executing addition for2 and 2. Result: 4
+
+2023-10-27 16:02:45.017 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 4
+
+2023-10-27 16:02:45.020 [main] INFO  org.example.Main - Executing subtraction for2 and 5. Result: 32.0
+
+2023-10-27 16:05:03.694 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 0
+
+2023-10-27 16:05:03.696 [main] INFO  org.example.Main - Executing addition for2 and 2. Result: 4
+
+2023-10-27 16:05:03.696 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 4
+
+2023-10-27 16:05:03.698 [main] INFO  org.example.Main - Executing subtraction for2 and 5. Result: 2
+
+2023-10-27 16:06:46.382 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 0
+
+2023-10-27 16:06:46.383 [main] INFO  org.example.Main - Executing addition for2 and 2. Result: 4
+
+2023-10-27 16:06:46.383 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 4
+
+2023-10-27 16:06:46.383 [main] INFO  org.example.Main - Executing subtraction for2 and 5. Result: 2
+

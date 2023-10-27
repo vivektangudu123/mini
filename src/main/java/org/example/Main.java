@@ -11,7 +11,7 @@ public class Main {
         //some changes
         Scanner reader = new Scanner(System.in);
         int op, flag=0;
-        double num, exp;
+        int num, exp;
 
         do{
             System.out.println("Operation:\n");
@@ -29,36 +29,36 @@ public class Main {
                     case 1:  // addition
                         System.out.println("Add two numbers!!\n");
                         System.out.print("Enter number1: \n");
-                        num = reader.nextDouble();
+                        num = reader.nextInt();
                         System.out.print("Enter number2: \n");
-                        exp = reader.nextDouble();
+                        exp = reader.nextInt();
                         add(num,exp);
                         break;
 
                     case 2: //Subtract
                         System.out.println("Subtract two numbers!!\n");
                         System.out.print("Enter number1: \n");
-                        num = reader.nextDouble();
+                        num = reader.nextInt();
                         System.out.print("Enter number2: \n");
-                        exp = reader.nextDouble();
+                        exp = reader.nextInt();
                         subt(num,exp);
                         break;
 
                     case 3: //Power
                         System.out.println("Power two numbers!!\n");
                         System.out.print("Enter number1: \n");
-                        num = reader.nextDouble();
+                        num = reader.nextInt();
                         System.out.print("Enter number2: \n");
-                        exp = reader.nextDouble();
-                        power(num,exp);
+                        exp = reader.nextInt();
+                        per(num,exp);
                         break;
 
                     case 4: //Power
                         System.out.println("Multiply two numbers!!\n");
                         System.out.print("Enter number1: \n");
-                        num = reader.nextDouble();
+                        num = reader.nextInt();
                         System.out.print("Enter number2: \n");
-                        exp = reader.nextDouble();
+                        exp = reader.nextInt();
                         mul(num,exp);
                         break;
 
@@ -70,27 +70,27 @@ public class Main {
         }while(flag == 0);
     }
 
-    public static double add(double num,double exp){
-        double c=num+exp;
+    public static int add(int num,int exp){
+        int c=num+exp;
         System.out.println("\nThe Result is "+c+"\n");
         logger.info("Executing addition for"+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
 
-    public static double subt(double num,double exp){
-        double c=num-exp;
+    public static int subt(int num,int exp){
+        int c=num-exp;
         System.out.println("\nThe Result is "+c+"\n");
         logger.info("Executing subtraction for"+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
-    public static double mul(double num,double exp){
-        double c = Math.pow(num,exp);
+    public static int mul(int num,int exp){
+        int c = num*exp;
         System.out.println("\nThe Result is "+c+"\n");
         logger.info("Executing subtraction for"+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
-    public static double power(double num, double exp){
-        double c = Math.pow(num,exp);
+    public static int per(int num, int exp){
+        int c = num%exp;
         System.out.println("\nThe Result is "+c+"\n");
         logger.info("Executing subtraction for"+num+" and "+exp+". Result: "+c+"\n");
         return c;
