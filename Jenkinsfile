@@ -36,6 +36,8 @@ pipeline{
                 script{
                     sh 'docker container prune -f'
                     sh 'docker image prune -f'
+                    sh 'docker stop Unscientific'
+                    sh 'docker container prune -f'
                 }
             }
         }
@@ -51,11 +53,5 @@ pipeline{
                 sudoUser: null
             }
         }
-        stage('Step 7: Stop Containers and delete that'){
-            steps{
-                sh 'docker stop Unscientific'
-                sh 'docker container prune -f'
-            }
-         }
     }
 }
