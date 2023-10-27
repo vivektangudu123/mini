@@ -21,8 +21,7 @@ public class Main {
             System.out.println("3. Naural Log");
             System.out.println("4. Power");
             System.out.println("5. Exit\n");
-            System.out.print("Enter your choice(number): ");
-            System.out.println("");
+            System.out.print("Enter your choice(number): \n");
             op = reader.nextInt();
             if(op==5) flag = 1;
             else{
