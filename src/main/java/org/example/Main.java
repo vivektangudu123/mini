@@ -28,8 +28,7 @@ public class Main {
                 switch(op){
 
                     case 1:  // Square Root
-                        System.out.println("You choose Square Root!!");
-                        System.out.println("");
+                        System.out.println("You choose Square Root!!\n");
                         System.out.print("Enter number: ");
                         num = reader.nextDouble();
                         squareRoot(num);
