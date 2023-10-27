@@ -48,7 +48,7 @@ pipeline{
                 installation: 'Ansible',
                 inventory: 'Deployment/inventory',
                 playbook: 'Deployment/deploy.yml',
-                sudoUser: null
+                sudoUser: yes
             }
         }
     }
