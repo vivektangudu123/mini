@@ -36,8 +36,7 @@ pipeline{
                 script{
                     sh 'docker container prune -f'
                     sh 'docker image prune -f'
-                    sh 'docker ps -a -q'
-                    sh 'docker container prune -f'
+                    sh 'docker ps -aq | xargs docker stop | xargs docker rm'
                 }
             }
         }
