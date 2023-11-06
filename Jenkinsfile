@@ -6,7 +6,7 @@ pipeline{
     stages{
         stage('Stage 1: Git Clone'){
            steps{
-                git branch: 'master',
+                git branch: 'main',
                 url:'https://github.com/vivektangudu123/mini.git'
             }
         }
