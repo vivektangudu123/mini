@@ -46,9 +46,9 @@ public class Main {
 
                     case 3: //Percentile function
                         System.out.println("Power two numbers!!\n");
-                        System.out.print("Enter number1: \n");
+                        System.out.print("Enter number 1: \n");
                         num = reader.nextInt();
-                        System.out.print("Enter number2: \n");
+                        System.out.print("Enter number 2: \n");
                         exp = reader.nextInt();
                         per(num,exp);
                         break;
