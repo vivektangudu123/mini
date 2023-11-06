@@ -14,20 +14,20 @@ public class Main {
         int num, exp;
 
         do{
-            System.out.println("Operation:\n");
+            System.out.println("\nOperation:");
             System.out.println("1. Add");
             System.out.println("2. Subtract");
-            System.out.println("3. Power");
+            System.out.println("3. Percentile function");
             System.out.println("4. Multiply");
             System.out.println("5. Exit\n");
-            System.out.print("Enter your choice(number): \n");
+            System.out.print("Enter your choice(number):");
             op = reader.nextInt();
             if(op==5) flag = 1;
             else{
                 switch(op){
 
                     case 1:  // addition
-                        System.out.println("Add two numbers!!\n");
+                        System.out.println("\nAdd two numbers!!");
                         System.out.print("Enter number1: \n");
                         num = reader.nextInt();
                         System.out.print("Enter number2: \n");
@@ -36,7 +36,7 @@ public class Main {
                         break;
 
                     case 2: //Subtract
-                        System.out.println("Subtract two numbers!!\n");
+                        System.out.println("Subtract two numbers!!");
                         System.out.print("Enter number1: \n");
                         num = reader.nextInt();
                         System.out.print("Enter number2: \n");
@@ -44,7 +44,7 @@ public class Main {
                         subt(num,exp);
                         break;
 
-                    case 3: //Power
+                    case 3: //Percentile function
                         System.out.println("Power two numbers!!\n");
                         System.out.print("Enter number1: \n");
                         num = reader.nextInt();
@@ -73,26 +73,26 @@ public class Main {
     public static int add(int num,int exp){
         int c=num+exp;
         System.out.println("\nThe Result is "+c+"\n");
-        logger.info("Executing addition for"+num+" and "+exp+". Result: "+c+"\n");
+        logger.info("Executing addition for "+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
 
     public static int subt(int num,int exp){
         int c=num-exp;
         System.out.println("\nThe Result is "+c+"\n");
-        logger.info("Executing subtraction for"+num+" and "+exp+". Result: "+c+"\n");
+        logger.info("Executing subtraction for "+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
     public static int mul(int num,int exp){
         int c = num*exp;
         System.out.println("\nThe Result is "+c+"\n");
-        logger.info("Executing subtraction for"+num+" and "+exp+". Result: "+c+"\n");
+        logger.info("Executing multiplication for "+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
     public static int per(int num, int exp){
         int c = num%exp;
         System.out.println("\nThe Result is "+c+"\n");
-        logger.info("Executing subtraction for"+num+" and "+exp+". Result: "+c+"\n");
+        logger.info("Executing percentile operation for "+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
 }

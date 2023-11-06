@@ -7,7 +7,7 @@ pipeline{
         stage('Stage 1: Git Clone'){
            steps{
                 git branch: 'master',
-                url:'https://github.com/vivektangudu123/calculator.git'
+                url:'https://github.com/vivektangudu123/mini.git'
             }
         }
         stage('Step 2: Maven Build'){

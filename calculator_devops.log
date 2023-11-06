@@ -86,3 +86,11 @@
 
 2023-10-31 11:28:16.040 [main] INFO  org.example.Main - Executing subtraction for2 and 5. Result: 2
 
+2023-10-31 14:49:15.089 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 0
+
+2023-10-31 14:49:15.090 [main] INFO  org.example.Main - Executing addition for2 and 2. Result: 4
+
+2023-10-31 14:49:15.091 [main] INFO  org.example.Main - Executing subtraction for2 and 2. Result: 4
+
+2023-10-31 14:49:15.091 [main] INFO  org.example.Main - Executing subtraction for2 and 5. Result: 2
+

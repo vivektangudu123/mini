@@ -7,4 +7,4 @@
     - name: Pull image
       shell: docker pull bean6792/calculator:latest
     - name: Running container
-      shell: docker run -it -d --name Unscientific bean6792/calculator
+      shell: docker run -it -d --name calculator_container bean6792/calculator
