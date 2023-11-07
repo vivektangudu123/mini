@@ -94,3 +94,11 @@
 
 2023-10-31 14:49:15.091 [main] INFO  org.example.Main - Executing subtraction for2 and 5. Result: 2
 
+2023-11-07 19:13:23.461 [main] INFO  org.example.Main - Executing subtraction for 2.0 and 2.0. Result: 0.0
+
+2023-11-07 19:13:23.462 [main] INFO  org.example.Main - Executing addition for 2.0 and 2.0. Result: 4.0
+
+2023-11-07 19:13:23.462 [main] INFO  org.example.Main - Executing multiplication for 2.0 and 2.0. Result: 4.0
+
+2023-11-07 19:13:23.462 [main] INFO  org.example.Main - Executing percentile operation for 2.0 and 5.0. Result: 2.0
+
