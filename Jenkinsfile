@@ -31,5 +31,14 @@ pipeline{
                 }
             }
         }
+        stage('Stage 5: Clean docker images'){
+            steps{
+                script{
+                    sh 'docker container prune -f'
+                    sh 'docker image prune -f'
+                    sh 'docker ps -aq | xargs docker stop | xargs docker rm'
+                }
+            }
+        }
     }
 }
