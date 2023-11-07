@@ -11,7 +11,7 @@ public class Main {
         //some changes
         Scanner reader = new Scanner(System.in);
         int op, flag=0;
-        int num, exp;
+        double num, exp;
 
         do{
             System.out.println("\nOperation:");
@@ -70,27 +70,27 @@ public class Main {
         }while(flag == 0);
     }
 
-    public static int add(int num,int exp){
-        int c=num+exp;
+    public static double add(double num,double exp){
+        double c=num+exp;
         System.out.println("\nThe Result is "+c+"\n");
         logger.info("Executing addition for "+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
 
-    public static int subt(int num,int exp){
-        int c=num-exp;
+    public static double subt(double num,double exp){
+        double c=num-exp;
         System.out.println("\nThe Result is "+c+"\n");
         logger.info("Executing subtraction for "+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
-    public static int mul(int num,int exp){
-        int c = num*exp;
+    public static double mul(double num,double exp){
+        double c = num*exp;
         System.out.println("\nThe Result is "+c+"\n");
         logger.info("Executing multiplication for "+num+" and "+exp+". Result: "+c+"\n");
         return c;
     }
-    public static int per(int num, int exp){
-        int c = num%exp;
+    public static double per(double num,double exp){
+        double c = num%exp;
         System.out.println("\nThe Result is "+c+"\n");
         logger.info("Executing percentile operation for "+num+" and "+exp+". Result: "+c+"\n");
         return c;
