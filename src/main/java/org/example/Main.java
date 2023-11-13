@@ -30,7 +30,7 @@ public class Main {
                         System.out.println("\nAdd two numbers!!");
                         System.out.print("Enter number 1: \n");
                         num = reader.nextInt();
-                        System.out.print("Enter number 2: \n");
+                        System.out.print("Enter number_ 2: \n");
                         exp = reader.nextInt();
                         add(num,exp);
                         break;
